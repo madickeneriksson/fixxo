@@ -55,10 +55,19 @@
     <section class="contact-form">
             <div class="container">
             <h2>Come in Contact with Us</h2>
-            <form>
-                <input id="name" type="text">
-                <input id="email" type="email">
-                <textarea id="message"></textarea>
+            <form novalidate>
+                <div>
+                    <input id="name" onkeyup="validate" type="text" placeholder="Your name">
+                <div id="nameErrorMessage" class="errorMessage"></div>
+                </div>
+                <div>
+                    <input id="email" type="email" placeholder="Your email">
+                    <div id="emailErrorMessage" class="errorMessage"></div>
+                </div>
+                <div class="textarea">
+                    <textarea id="message" placeholder="Comments"></textarea>
+                    <div id="commentErrorMessage" class="errorMessage"></div>
+                </div>
                 <div>
                     <button type="submit" class="btn-theme">
                         <span class="corner-topLeft"></span>
