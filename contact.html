@@ -12,16 +12,16 @@
     <script defer src="assets/script.js"></script>
 </head>
 <body>
-<header class="__gradient-gray">
+
 <nav class="__navbar container">
             <div class="logotype">
                 <a href="index.html"><img src="images/logotype.svg" alt="Fixxo logo"></a>
              </div>
             <div class="__nav-links">
-                <a class="__active" href="#">Home</a>
+                <a href="index.html">Home</a>
                 <a href="#">Categories</a>
                 <a href="#">Products</a>
-                <a href="#">Contacts</a>
+                <a class="__active" href="contact.html">Contacts</a>
             </div>
             <div class="__nav-icons">
                 <a href="#"><i class="fa-regular fa-magnifying-glass"></i>
@@ -39,5 +39,47 @@
             </div>
     </div>
 </nav>
+    <section class="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb-list">
+                <li><a href="index.html">Home</a></li>
+                <li>Contacts</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="map">
+        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.260750868198!2d18.020033016183987!3d59.345295116784314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d86c5590a35%3A0xac5dd727a529fe56!2sEC%20Utbildning!5e0!3m2!1ssv!2sse!4v1665676421167!5m2!1ssv!2sse" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-form">
+            <div class="container">
+            <h2>Come in Contact with Us</h2>
+            <form>
+                <input id="name" type="text">
+                <input id="email" type="email">
+                <textarea id="message"></textarea>
+                <div>
+                    <button type="submit" class="btn-theme">
+                        <span class="corner-topLeft"></span>
+                        <span class="corner-bottomRight"></span>
+                        Post Comments
+                    </button>
+                </div>
+            </form>
+        </div>
+ </section>
+
+ <footer>
+    <div class="social-media">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-google"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div>© 2022 Fixxo. All Rights Reserved</div>
+ </footer>
+
 </body>
 </html>
